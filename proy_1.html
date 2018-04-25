@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>AyA - Costa Rica - Mejoramiento del medio ambiente del área metropolitana de San José</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Toastr style -->
+    <link href="css/plugins/toastr/toastr.min.css" rel="stylesheet">
+
+    <!-- Gritter -->
+    <link href="js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element"> <span>
+                            <img alt="image" class="img-circle" width="75px" height="50px" src="img/aya_logo.png" />
+                             </span>
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">Instituto Costarricense de Acueductos y Alcantarillados</strong>
+                             </span> <!--span class="text-muted text-xs block">Art Director <b class="caret"></b></span--> </span> </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a href="profile.html">Profile</a></li>
+                                <li><a href="contacts.html">Contacts</a></li>
+                                <li><a href="mailbox.html">Mailbox</a></li>
+                                <li class="divider"></li>
+                                <li><a href="login.html">Logout</a></li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            AyA
+                        </div>
+                    </li>
+                    <li>
+                        <a href="layouts.html"><i class="fa fa-home"></i> <span class="nav-label">Inicio</span></a>
+						<ul class="nav nav-second-level collapse">
+                            <li><a href="form_basic.html">Inicio</a></li>
+                        </ul>
+                    </li>
+					<li>
+                        <a href="layouts.html"><i class="fa fa-map-marker"></i> <span class="nav-label">Puntos de atención</span></a>
+						<ul class="nav nav-second-level collapse">
+                            <li><a href="form_basic.html">Puntos de atención</a></li>
+                        </ul>
+                    </li>
+					<li>
+                        <a href="layouts.html"><i class="fa fa-wrench"></i> <span class="nav-label">Averías</span></a>
+						<ul class="nav nav-second-level collapse">
+                            <li><a href="form_basic.html">Averías</a></li>
+                        </ul>
+                    </li>
+					<li>
+                        <a href="consulta_facturacion.html"><i class="fa fa-calculator"></i> <span class="nav-label">Consulta facturación</span></a>
+						<ul class="nav nav-second-level collapse">
+                            <li><a href="consulta_facturacion.html">Consulta facturación</a></li>
+                        </ul>
+                    </li>
+					<li>
+                        <a href="info_general.html"><i class="fa fa-info-circle"></i> <span class="nav-label">Información general</span></a>
+						<ul class="nav nav-second-level collapse">
+                            <li><a href="info_general.html">Información general</a></li>
+							<li><a href="info_1.html">Contraloría de Servicios</a></li>
+							<li><a href="info_2.html">Cooperación Internacional</a></li>
+							<li><a href="info_3.html">Auditoría</a></li>
+							<li><a href="info_4.html">Capital Humano</a></li>
+							<li><a href="info_5.html">Informes Financieros</a></li>
+							<li><a href="doc_proyectos.html">Proyectos</a></li>
+                        </ul>
+                    </li>
+					<li>
+                        <a href="acerca_De.html"><i class="fa fa-users"></i> <span class="nav-label">Acerca de</span></a>
+						<ul class="nav nav-second-level collapse">
+                            <li><a href="acerca_de.html">Acerca de</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="gray-bg dashbard-1">
+        <div class="row border-bottom">
+        <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+            <form role="search" class="navbar-form-custom" action="search_results.html">
+                <div class="form-group">
+                    <input type="text" placeholder="Buscar..." class="form-control" name="top-search" id="top-search">
+                </div>
+            </form>
+        </div>
+            <ul  style="margin-top:18px;" class="nav navbar-top-links navbar-right">
+                <li>
+                    <h4><span class="m-r-sm text-muted welcome-message">Instituto Costarricense de Acueductos y Alcantarillados</span></h4>
+                </li>
+			</ul>
+        </nav>
+        </div>
+		
+		<div class="wrapper wrapper-content animated fadeInLeft">
+			<div id="consultaNis" class="row">
+				<div class="col-lg-12">
+					<div class="ibox float-e-margins">
+						<div class="ibox-content">
+							<div class="text-center article-title">
+                                <h1>
+                                    Mejoramiento del medio ambiente del área metropolitana de San José
+                                </h1>
+								<span class="text-muted">MIDEPLAN: 000043</span>
+                            </div>
+							<div class="carousel slide" id="carousel1">
+                                <div class="carousel-inner">
+                                    <div class="item">
+                                        <img alt="image" class="img-responsive" src="img/proy_1_1.jpg">
+                                    </div>
+                                    <div class="item">
+                                        <img alt="image" class="img-responsive" src="img/proy_1_2.jpg">
+                                    </div>
+                                    <div class="item active">
+                                        <img alt="image" class="img-responsive" src="img/proy_1_6.jpg">
+                                    </div>
+                                    <div class="item">
+                                        <img alt="image" class="img-responsive" src="img/proy_1_4.jpg">
+                                    </div>
+                                    <div class="item">
+                                        <img alt="image" class="img-responsive" src="img/proy_1_5jpg">
+                                    </div>
+                                    <div class="item">
+                                        <img alt="image" class="img-responsive" src="img/proy_1_3jpg">
+                                    </div>
+                                </div>
+                                <a data-slide="prev" href="#carousel1" class="left carousel-control">
+                                    <span class="icon-prev"></span>
+                                </a>
+                                <a data-slide="next" href="#carousel1" class="right carousel-control">
+                                    <span class="icon-next"></span>
+                                </a>
+                            </div>
+							<br/><br/>
+							<p>
+								<h2>Aspectos Generales</h2>
+								<table>
+									<thead>
+										<th></th>
+										<th></th>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="col-lg-2">
+												Descripción del proyecto:
+											</td>
+											<td class="col-lg-10">
+												Rehabilitación y ampliación del sistema de recolección de aguas residuales (incluye colectores, subcolectores, redes secundarias, túnel de trasvase  y emisario) y la construcción de una planta de tratamiento de aguas residuales
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<br/>
+											</td>
+										<tr/>
+										<tr>
+											<td class="col-lg-2">
+												Objetivo general:
+											</td>
+											<td class="col-lg-10">
+												Mejorar la calidad del agua de los ríos y de los mantos acuíferos del Área Metropolitana de San José, por medio de la rehabilitación y extensión del sistema de recolección  de aguas residuales existentes y la construcción de una planta de tratamiento de aguas residuales
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<br/>
+											</td>
+										<tr/>
+										<tr>
+											<td class="col-lg-2">
+												Objetivo específico:
+											</td>
+											<td class="col-lg-10">
+												1. Rehabilitar y Ampliar los colectores, subcolectores y redes secundarias de las cuencas Rivera, Torres, María Aguilar y Tiribí<br/>
+												2. Dar tratamiento a las aguas residuales recolectadas
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<br/>
+											</td>
+										<tr/>
+										<tr>
+											<td class="col-lg-2">
+												Beneficiarios (as) directos (as):
+											</td>
+											<td class="col-lg-10">
+												1.070
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<br/>
+											</td>
+										<tr/>
+										<tr>
+											<td class="col-lg-2">
+												Provincia:
+											</td>
+											<td class="col-lg-10">
+												Cartago;San José;
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<br/>
+											</td>
+										<tr/>
+										<tr>
+											<td class="col-lg-2">
+												Cantón:
+											</td>
+											<td class="col-lg-10">
+												Curridabat;Moravia;Montes de Oca;Goicoechea;Alajuelita;Desamparados;
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<br/>
+											</td>
+										<tr/>
+										<tr>
+											<td class="col-lg-2">
+												Distrito:
+											</td>
+											<td class="col-lg-10">
+												La trinidad;San Vicente;Colima;León XIII;Anselmo Llorente;Cinco Esquinas;San Juan;Cascajal;Patalillo;Nombre de Jesús;San Rafael;San Isidro;San Felipe;Alajuelita;Mata de Plátano;Purral;Ipís;Calle Blancos;San Francisco;Guadalupe;Gravilias;San Rafael Arriba;San Rafael Abajo;Damas;San Antonio;San Miguel;Desamparados;San Francisco de Dos Rios;Zapote;San Sebastián;Hatillo;Mata Redonda;La Uruca;Catedral;Hospital;Merced;Carmen.
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<br/>
+											</td>
+										<tr/>
+										<tr>
+											<td>
+												<br/>
+											</td>
+										<tr/>
+										<tr>
+											<td class="col-lg-2">
+												Área de influencia del proyecto:
+											</td>
+											<td class="col-lg-10">
+												La población del área metropolitana del país, dado que el proyecto reducirá la contaminación en la Cuenca del Río Grande de Tárcoles, causada por la disposición de las aguas residuales crudas. Region GAM
+											</td>
+										</tr>
+									<tbody>
+								</table>
+							</p>
+							<br/><br/>
+							<p>
+								<h2>Costo total</h2>
+								<table>
+									<thead>
+										<th></th>
+										<th></th>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="col-lg-2">
+												Año:
+											</td>
+											<td class="col-lg-10">
+												2013
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<br/>
+											</td>
+										<tr/>
+										<tr>
+											<td class="col-lg-2">
+												Total de recursos internos:
+											</td>
+											<td class="col-lg-10">
+												₡10.083.484.391,00
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<br/>
+											</td>
+										<tr/>
+										<tr>
+											<td class="col-lg-2">
+												Total de rercursos externos:
+											</td>
+											<td class="col-lg-10">
+												₡11.509.141.671,00
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<br/>
+											</td>
+										<tr/>
+										<tr>
+											<td class="col-lg-2">
+												Costo total del proyecto:
+											</td>
+											<td class="col-lg-10">
+												₡21.592.626.062,00
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<br/>
+											</td>
+										<tr/>
+										<tr>
+											<td class="col-lg-2">
+												Año:
+											</td>
+											<td class="col-lg-10">
+												2014
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<br/>
+											</td>
+										<tr/>
+										<tr>
+											<td class="col-lg-2">
+												Total de recursos internos:
+											</td>
+											<td class="col-lg-10">
+												₡1.673.622.314,00
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<br/>
+											</td>
+										<tr/>
+										<tr>
+											<td class="col-lg-2">
+												Total de rercursos externos:
+											</td>
+											<td class="col-lg-10">
+												₡11.310.266.186,00
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<br/>
+											</td>
+										<tr/>
+										<tr>
+											<td class="col-lg-2">
+												Costo total del proyecto:
+											</td>
+											<td class="col-lg-10">
+												₡12.983.888.500,00
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<br/>
+											</td>
+										<tr/>
+										<tr>
+											<td class="col-lg-2">
+												Año:
+											</td>
+											<td class="col-lg-10">
+												2015
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<br/>
+											</td>
+										<tr/>
+										<tr>
+											<td class="col-lg-2">
+												Total de recursos internos:
+											</td>
+											<td class="col-lg-10">
+												₡5.663.676.536,00
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<br/>
+											</td>
+										<tr/>
+										<tr>
+											<td class="col-lg-2">
+												Total de rercursos externos:
+											</td>
+											<td class="col-lg-10">
+												₡22.834.283.307,00
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<br/>
+											</td>
+										<tr/>
+										<tr>
+											<td class="col-lg-2">
+												Costo total del proyecto:
+											</td>
+											<td class="col-lg-10">
+												₡28.497.959.843,00
+											</td>
+										</tr>
+								<tbody>
+							</table>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+    </div>
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Flot -->
+    <script src="js/plugins/flot/jquery.flot.js"></script>
+    <script src="js/plugins/flot/jquery.flot.tooltip.min.js"></script>
+    <script src="js/plugins/flot/jquery.flot.spline.js"></script>
+    <script src="js/plugins/flot/jquery.flot.resize.js"></script>
+    <script src="js/plugins/flot/jquery.flot.pie.js"></script>
+
+    <!-- Peity -->
+    <script src="js/plugins/peity/jquery.peity.min.js"></script>
+    <script src="js/demo/peity-demo.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+
+    <!-- jQuery UI -->
+    <script src="js/plugins/jquery-ui/jquery-ui.min.js"></script>
+
+    <!-- GITTER -->
+    <script src="js/plugins/gritter/jquery.gritter.min.js"></script>
+
+    <!-- Sparkline -->
+    <script src="js/plugins/sparkline/jquery.sparkline.min.js"></script>
+
+    <!-- Sparkline demo data  -->
+    <script src="js/demo/sparkline-demo.js"></script>
+
+    <!-- ChartJS-->
+    <script src="js/plugins/chartJs/Chart.min.js"></script>
+
+    <!-- Toastr -->
+    <script src="js/plugins/toastr/toastr.min.js"></script>
+
+    </script>
+</body>
+</html>
